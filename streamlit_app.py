@@ -23,6 +23,8 @@ import re
 #         st.error(f"요약 생성 중 오류 발생: {e}")
 #         return ""
 # """
+# 페이지 설정
+st.set_page_config(page_title="네이버 키워드 기반 뉴스 검색", page_icon="📰")
 
 # 네이버 뉴스 API 키 설정
 client_id = st.secrets["naver"]["client_id"]
